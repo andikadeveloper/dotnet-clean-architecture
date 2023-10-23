@@ -10,7 +10,7 @@ steps:
 - name: integration-test
   commands:
     - docker build -t dotnet-clean-architecture .
-    - docker run --name=dotnet-clean-architecture
+    - docker run dotnet-clean-architecture
 trigger:
   branch:
     - main
